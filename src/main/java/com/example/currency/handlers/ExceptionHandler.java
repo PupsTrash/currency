@@ -11,7 +11,7 @@ import javax.servlet.http.HttpServletResponse;
 public class ExceptionHandler {
 
     @org.springframework.web.bind.annotation.ExceptionHandler(FeignException.class)
-    public String handleCurrencyClientException(FeignException e, HttpServletResponse response){
+    public String handleCurrencyClientException(FeignException e, HttpServletResponse response) {
         response.setStatus(e.status());
         log.error("feign clients exception");
         return "error connect to outer service";

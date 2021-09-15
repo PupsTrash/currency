@@ -13,17 +13,16 @@ public class GifSearchResponse {
 
     @Data
     static class GifData {
-        private String type;
-        private String id;
-        private String title;
-        private Map<String, Image> images;
-
         @JsonIgnore
         String user;
         @JsonIgnore
         String analytics_response_payload;
         @JsonIgnore
         String analytics;
+        private String type;
+        private String id;
+        private String title;
+        private Map<String, Image> images;
 
         @Data
         static class Image {

@@ -22,6 +22,7 @@ public interface SearchGif {
         public AsyncFeign.AsyncBuilder feignBuilder() {
             return AsyncFeign.asyncBuilder();
         }
+
         @Bean
         public Contract feignContract() {
             return new feign.Contract.Default();

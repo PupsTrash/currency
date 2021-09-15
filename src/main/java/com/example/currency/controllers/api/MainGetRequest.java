@@ -6,6 +6,6 @@ import lombok.Data;
 @Data
 public class MainGetRequest {
 
-    @Schema(description = "currency (3-letter code) default: USD")
+    @Schema(description = "currency (3-letter code)", example = "RUB")
     private String currencyCode;
 }

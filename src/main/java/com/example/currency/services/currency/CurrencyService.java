@@ -11,13 +11,11 @@ import java.time.LocalDate;
 @RequiredArgsConstructor
 @Slf4j
 public class CurrencyService {
+    private final Currency currency;
     @Value("${currencyServiceVariable.app_id}")
     private String id;
     @Value("${currencyServiceVariable.base}")
     private String baseCurrency;
-
-    private final Currency currency;
-
 
     public CurrencyResponse getCurrency(String currencyRequest, String date) {
 
@@ -30,11 +28,12 @@ public class CurrencyService {
      * if more 1.0 -> currency up
      * if less 1.0 -> currency down
      * if equal 1.0 -> currency don't change
+     *
      * @param currencyRequest
      * @return
      */
 
-    public Float currencyRate24H(String currencyRequest){
+    public Float currencyRate24H(String currencyRequest) {
         final CurrencyResponse currencyResponseNow = getCurrency(currencyRequest,
                 LocalDate.now().toString());
 

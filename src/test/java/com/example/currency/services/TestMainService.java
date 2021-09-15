@@ -14,14 +14,12 @@ import java.io.IOException;
 
 @SpringBootTest
 public class TestMainService {
-    @Autowired
-    private MainService mainService;
-
-    @MockBean
-    private GifService gifServiceMock;
-
     @MockBean
     CurrencyService currencyServiceMock;
+    @Autowired
+    private MainService mainService;
+    @MockBean
+    private GifService gifServiceMock;
 
     @Test
     public void testRich() throws IOException {

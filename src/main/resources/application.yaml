@@ -1,0 +1,12 @@
+server:
+  port: 8081
+
+currencyServiceVariable:
+  source: "https://openexchangerates.org/api"
+  app_id: "8857e21cb5a444bbb5e48775395e13a8"
+  base: "USD"
+
+giphyServiceVariable:
+  source: "https://api.giphy.com/v1"
+  api_key: "sqRXicUUw8PBZRFMdQls9YkhJiQOEPjS"
+  limit: "1"

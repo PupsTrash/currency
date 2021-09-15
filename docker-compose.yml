@@ -1,0 +1,15 @@
+version: '3.7'
+
+services:
+  currency:
+    container_name: currency
+    build: .
+    environment:
+      JAVA_OPTS:
+    ports:
+      - 8085:8081
+
+# Use CMD/Terminal
+#  ./gradlew clean build
+# `docker-compose build`
+# `docker-compose up`

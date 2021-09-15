@@ -10,7 +10,13 @@ REST API GIF - https://developers.giphy.com/docs/api#quick-start-guide
 
 ### HOW TO BUILD AND RUN
 Use CMD/Terminal
-
 `./gradlew clean build` <br />
 `docker-compose build` <br />
 `docker-compose up` 
+
+
+### Log
+![img_1.png](img_1.png)
+
+### Response example
+![response.gif](response.gif)
